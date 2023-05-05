@@ -21,11 +21,13 @@
 }
 
 .grid figure img {
-	background:linear-gradient(30deg, #756e6e, #090d10);
-    border-radius: 5px; 
+	background: linear-gradient(30deg, #756e6e, #090d10);
+	border-radius: 5px;
 	max-width: 100%;
 	display: block;
 	position: relative;
+	aspect-ratio: 7/5;
+	width: 28rem;
 }
 
 .grid figcaption {

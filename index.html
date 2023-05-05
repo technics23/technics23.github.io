@@ -4,12 +4,11 @@
     <meta charset="UTF-8"/>
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="google-site-verification" content="zL5krDRWEx7pyg-WourDLxOe7Ry2H7YwngrJeOAaB78" />
     <title>Technics'23</title>
     <meta content="Blueprint: A basic template for a page stack navigation effect" name="description"/>
     <meta content="blueprint, template, html, css, page stack, 3d, perspective, navigation, menu" name="keywords"/>
     <meta content="koushik" name="author"/>
-    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/demo.css" rel="stylesheet" type="text/css"/>
     <link href="css/component.css" rel="stylesheet" type="text/css"/>
@@ -243,8 +242,21 @@
 </div>
 <!-- /pages-stack -->
 <button class="menu-button"><span>Menu</span></button>
-<script src="js/classie.js"></script>
-<script src="js/main.js"></script>
+<script defer src="js/classie.js"></script>
+<script defer src="js/main.js"></script>
+<script defer>
+    // force https connection
+    if (window.location.hostname !== 'localhost' && window.location.protocol === 'http:') {
+
+        console.log("you are accessing us via "
+            + "an insecure protocol (HTTP). "
+            + "Redirecting you to HTTPS.");
+
+        window.location.href =
+            window.location.href.replace(
+                'http:', 'https:');
+    }
+</script>
 </body>
 
 </html>
