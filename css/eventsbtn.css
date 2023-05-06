@@ -23,14 +23,6 @@
         left: 20.3%;
         bottom: 10.4vh;
     }
-    
-    .line {
-        width: 20em;
-    }
-    
-    #title h3 {
-        font-size: 200%;
-    }
 }
 
 .coolBeans::after {
