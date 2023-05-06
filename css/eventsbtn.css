@@ -17,8 +17,8 @@
     will-change: transform;
     z-index: 46;
 }
-.coolBeans {
-@media (max-width: 480px){
+
+@media screen and (max-width: 480px){
     .coolBeans {
         left: 20.3%;
         bottom: 10.4vh;
