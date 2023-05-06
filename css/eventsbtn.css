@@ -3,7 +3,7 @@
 .coolBeans {
     position: fixed;
     left: 41.3%;
-    bottom: 10.4vh;
+    bottom: 2.4vh;
     border: 2px solid currentColor;
     border-radius: 3rem;
     color: #e4bb68;
@@ -17,6 +17,14 @@
     will-change: transform;
     z-index: 46;
 }
+.coolBeans {
+@media (max-width: 480px){
+    .coolBeans {
+        left: 20.3%;
+        bottom: 10.4vh;
+    }
+}
+
 .coolBeans::after {
     background-color: #61afef;
     border-radius: 3rem;
