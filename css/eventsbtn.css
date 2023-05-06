@@ -23,9 +23,13 @@
         left: 20.3%;
         bottom: 10.4vh;
     }
+    
+    #title{
+        width: 20em;
+    }
+    
     #title h3 {
         font-size: 200%;
-        width: 20em;
     }
 }
 
